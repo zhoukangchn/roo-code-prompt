@@ -13,17 +13,32 @@ When updating or adding new prompts to this library, follow these mandates:
 ## 🛠️ Usage Patterns for Roo Code (at Work)
 To get the most out of this library while on the company machine:
 
-### 1. The Reference Pattern
+### 1. The Reference Pattern (Universal)
 Before starting a complex task, tell Roo Code:
 > "Read the `Architect Mode` template from `README.md` in my `roo-code-prompt` repo and apply its logic to my current task."
 
-### 2. The Custom Instructions (Global)
-Copy the following into Roo Code's **Custom Instructions** settings to give it a permanent "Lobster Boost":
+### 2. The .clinerules Setup (Recommended for Windows/macOS/Linux)
+Create a `.clinerules` file in your **Business Repo** root.
+
+**For Windows Users:**
+```markdown
+# 📚 Loading Knowledge
+Before editing files, you MUST read the global rules:
+%USERPROFILE%\roo-code-prompt\AGENTS.md
+%USERPROFILE%\roo-code-prompt\README.md
+
+# 🛠️ Windows/Qwen3 Directives
+- Use Windows path format (\).
+- Use Powershell/CMD compatible commands (e.g., `type` instead of `cat`).
+- Follow the 'Plan -> Execute -> Verify' workflow.
+```
+
+### 3. The Custom Instructions (Global Boost)
+Copy this into Roo Code's **Custom Instructions** settings:
 ```markdown
 - Always analyze project structure before suggesting changes.
-- Follow the 'Plan -> Execute -> Verify' workflow.
+- Refer to `AGENTS.md` in the `roo-code-prompt` directory for core behaviors.
 - For Qwen3: Be explicit with file paths and line numbers.
-- When in doubt, ask for clarification instead of guessing.
 - Always check for syntax errors after editing a file.
 ```
 

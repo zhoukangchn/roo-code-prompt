@@ -5,6 +5,13 @@
 
 ---
 
+## 🚀 Quick Start (Windows)
+1. **Clone**: `git clone git@github.com:zhoukangchn/roo-code-prompt.git %USERPROFILE%\roo-code-prompt`
+2. **Configure**: Create a `.clinerules` file in your project root using the template in `AGENTS.md`.
+3. **Run**: Start Roo Code and ask: *"Read my global rules and start Architect mode."*
+
+---
+
 ## 🚀 核心原则 (Rules of Engagement)
 在使用 Roo Code 时，建议先在 **Custom Instructions** 中加入以下全局规则：
 1. **先思考后行动**：在修改文件前，先列出你的分析和执行计划。
