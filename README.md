@@ -1,22 +1,22 @@
 # Roo Code Prompt v2: Agentic Engineering Patterns 🦞
 # 适用于 Roo Code (Cline) + Qwen3 / Claude / Gemini
 
-这是一套基于社区最佳实践（Cline Rules / Agentic Workflow）优化的 Prompt 模板库。
+这是一套基于社区最佳实践（Roo Rules / Agentic Workflow）优化的 Prompt 模板库。
 
 ---
 
 ## 🚀 Quick Start (Windows)
 1. **Clone**: `git clone git@github.com:zhoukangchn/roo-code-prompt.git %USERPROFILE%\roo-code-prompt`
 2. **Configure**: 
-   - Create a file named `.clinerules` in your **Business project root**.
-   - Copy the content from `.clinerules.windows` in this repo into that file.
+   - Create a file named `.roorules` in your **Business project root**.
+   - Copy the content from `.roorules.windows` in this repo into that file.
 3. **Run**: Start Roo Code and ask: *"Read my global rules and start Architect mode."*
 
 ---
 
 ## 📄 Rules Templates
-- [.clinerules.windows](./.clinerules.windows) - Ready-to-copy template for Windows users.
-- [.clinerules.linux](./.clinerules.linux) - Ready-to-copy template for Linux/macOS users.
+- [.roorules.windows](./.roorules.windows) - Ready-to-copy template for Windows users.
+- [.roorules.linux](./.roorules.linux) - Ready-to-copy template for Linux/macOS users.
 
 ---
 
@@ -26,13 +26,17 @@
 2. **最小侵入性**：除非明确要求，否则不要删除代码注释，不要改动不相关的逻辑。
 3. **闭环验证**：完成修改后，必须主动尝试运行测试或检查语法。
 4. **Git 规范**：每次功能点完成后，主动提示用户进行提交。
+5. **加载优先级**：Roo Code 会按以下顺序寻找规则：
+   - `.roo/rules/` 目录下的 `.md` 文件 (现代推荐做法)
+   - 根目录下的 `.roorules` 文件
+   - 根目录下的 `AGENTS.md` 文件 (核心准则)
 
 ---
 
 ## 🛠️ 任务专精模板
 
 ### 1. 架构师模式 (Architect Mode)
-**适用场景**：新功能设计、复杂逻辑梳理。
+**适用场景**：新功能 design、复杂逻辑梳理。
 ```markdown
 Act as a Senior Software Architect. 
 Task: {design_task}

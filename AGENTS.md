@@ -17,8 +17,8 @@ To get the most out of this library while on the company machine:
 Before starting a complex task, tell Roo Code:
 > "Read the `Architect Mode` template from `README.md` in my `roo-code-prompt` repo and apply its logic to my current task."
 
-### 2. The .clinerules Setup (Recommended for Windows/macOS/Linux)
-Create a `.clinerules` file in your **Business Repo** root.
+### 2. The .roorules Setup (Recommended for Windows/macOS/Linux)
+Create a `.roorules` file in your **Business Repo** root.
 
 **For Windows Users:**
 ```markdown
