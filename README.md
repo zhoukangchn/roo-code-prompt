@@ -7,8 +7,16 @@
 
 ## 🚀 Quick Start (Windows)
 1. **Clone**: `git clone git@github.com:zhoukangchn/roo-code-prompt.git %USERPROFILE%\roo-code-prompt`
-2. **Configure**: Create a `.clinerules` file in your project root using the template in `AGENTS.md`.
+2. **Configure**: 
+   - Create a file named `.clinerules` in your **Business project root**.
+   - Copy the content from `.clinerules.windows` in this repo into that file.
 3. **Run**: Start Roo Code and ask: *"Read my global rules and start Architect mode."*
+
+---
+
+## 📄 Rules Templates
+- [.clinerules.windows](./.clinerules.windows) - Ready-to-copy template for Windows users.
+- [.clinerules.linux](./.clinerules.linux) - Ready-to-copy template for Linux/macOS users.
 
 ---
 
